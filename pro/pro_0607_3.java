@@ -1,4 +1,4 @@
-package baek;
+package pro;
 
 public class pro_0607_3 {
     public static void main(String[] args) {
