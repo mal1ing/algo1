@@ -1,19 +1,38 @@
-//package baek;
-//
-//import java.util.Scanner;
-//
-//public class baek_2985 {
-//    public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//
-//        int[] numArr = new int[3];
-//
-//        for(int i = 0; i < numArr.length; i++){
-//            numArr[i] = sc.nextInt();
-//        }
-//aaa
-//        if(numArr[2] == numArr[0] + numArr[1]){
-//            System.out.println(numArr[0] + "+" + numArr[1] + "=" + numArr[2]);
-//        } else if(numArr[2] == )
-//    }
-//}
+package baek;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class baek_2985 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        StringTokenizer st =new StringTokenizer(br.readLine());
+
+        int num1 = Integer.parseInt(st.nextToken());
+        int num2 = Integer.parseInt(st.nextToken());
+        int num3 = Integer.parseInt(st.nextToken());
+
+        if(num1 + num2 == num3){
+            System.out.println(num1 + "+" + num2 + "=" + num3);
+        } else if(num1 - num2 == num3){
+            System.out.println(num1 + "-" + num2 + "=" + num3);
+        } else if(num1 * num2 == num3){
+            System.out.println(num1 + "*" + num2  + "=" + num3);
+        } else if(num1 / num2 == num3){
+            System.out.println(num1 + "/" + num2 + "=" + num3);
+        } else if(num1 == num2 + num3){
+            System.out.println(num1 + "=" + num2 + "+" + num3);
+        } else if(num1 == num2 - num3){
+            System.out.println(num1 + "=" + num2 + "-" + num3);
+        } else if(num1 == num2 * num3){
+            System.out.println(num1 + "=" + num2  + "*" + num3);
+        } else if(num1 == num2 / num3){
+            System.out.println(num1 + "=" + num2 + "/" + num3);
+        }
+
+    }
+}
