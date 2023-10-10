@@ -2,8 +2,8 @@ package pro;
 
 public class pro_120913 {
     public static void main(String[] args) {
-        String my_str = "abc1Addfggg4556b";
-        int n = 6;
+        String my_str = "abcdef123";
+        int n = 3;
 
         int cnt = (my_str.length() + n - 1) / n;
         String[] answer = new String[cnt];
